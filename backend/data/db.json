@@ -1,0 +1,182 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "username": "admin",
+      "email": "admin@mojuri.com",
+      "passwordHash": "$2b$10$A/3otWe39fEiRBxRWX9tn.7PV3P1ZLYmJUOiIuhKWfkqSbeVO0YJa",
+      "role": "admin",
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    },
+    {
+      "id": "u2",
+      "username": "customer",
+      "email": "customer@mojuri.com",
+      "passwordHash": "$2b$10$S.YeHrTERngj202J3IG8gu8npQvA/buxVKj1ZMvS.NBzsDxwwsy.W",
+      "role": "customer",
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Charm Club Bracelet",
+      "description": "A beautiful classic link bracelet in 925 Sterling Silver, perfect for adding your favorite charms.",
+      "price": 49,
+      "salePrice": 39,
+      "image": "/media/product/1.jpg",
+      "gallery": [
+        "/media/product/1.jpg",
+        "/media/product/1-2.jpg"
+      ],
+      "category": "Bracelets",
+      "stock": 23,
+      "status": "in_stock",
+      "featured": true,
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    },
+    {
+      "id": "p2",
+      "name": "Princess Tiara Crown Ring",
+      "description": "Make a royal statement with this tiara ring in sterling silver, featuring sparkling cubic zirconia stones.",
+      "price": 69,
+      "salePrice": 59,
+      "image": "/media/product/2.jpg",
+      "gallery": [
+        "/media/product/2.jpg",
+        "/media/product/2-2.jpg"
+      ],
+      "category": "Rings",
+      "stock": 12,
+      "status": "in_stock",
+      "featured": true,
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    },
+    {
+      "id": "p3",
+      "name": "Classic Elegance Earrings",
+      "description": "Timeless halo stud earrings featuring round cubic zirconia crystals framed by smaller pavé stones.",
+      "price": 79,
+      "image": "/media/product/3.jpg",
+      "gallery": [
+        "/media/product/3.jpg",
+        "/media/product/3-2.jpg"
+      ],
+      "category": "Earrings",
+      "stock": 20,
+      "status": "in_stock",
+      "featured": true,
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    },
+    {
+      "id": "p4",
+      "name": "Solitaire Heart Pendant Necklace",
+      "description": "Express your love with this classic sterling silver necklace featuring a sparkling heart-shaped central stone.",
+      "price": 89,
+      "image": "/media/product/4.jpg",
+      "gallery": [
+        "/media/product/4.jpg",
+        "/media/product/4-2.jpg"
+      ],
+      "category": "Necklaces",
+      "stock": 10,
+      "status": "in_stock",
+      "featured": true,
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    },
+    {
+      "id": "p5",
+      "name": "Gold Plated Hoop Earrings",
+      "description": "Simple and elegant hoop earrings plated with 18k yellow gold. Lightweight for all-day comfort.",
+      "price": 59,
+      "salePrice": 49,
+      "image": "/media/product/5.jpg",
+      "gallery": [
+        "/media/product/5.jpg",
+        "/media/product/5-2.jpg"
+      ],
+      "category": "Earrings",
+      "stock": 30,
+      "status": "in_stock",
+      "featured": false,
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    },
+    {
+      "id": "p6",
+      "name": "Silver Twist Band Ring",
+      "description": "Delicate band ring with a twisted rope design in highly polished sterling silver.",
+      "price": 35,
+      "image": "/media/product/6.jpg",
+      "gallery": [
+        "/media/product/6.jpg",
+        "/media/product/6-2.jpg"
+      ],
+      "category": "Rings",
+      "stock": 0,
+      "status": "out_of_stock",
+      "featured": false,
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "u1",
+      "userEmail": "admin@mojuri.com",
+      "items": [
+        {
+          "productId": "p1",
+          "name": "Charm Club Bracelet",
+          "price": 49,
+          "quantity": 2
+        },
+        {
+          "productId": "p2",
+          "name": "Princess Tiara Crown Ring",
+          "price": 69,
+          "quantity": 3
+        }
+      ],
+      "totalAmount": 255,
+      "shippingAddress": "sdfdsZfsrDF fff, Fdf, fdFd, Postcode: fdfd, Phone: o98240927348",
+      "paymentMethod": "Cash on Delivery",
+      "id": "o_ljzwyh6c3",
+      "status": "pending",
+      "createdAt": "2026-06-25T02:23:03.744Z"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "c1",
+      "name": "Nguyen Van A",
+      "email": "nva@example.com",
+      "subject": "Inquiry about Charm Club Bracelet",
+      "message": "Hello, is this bracelet resizeable? I want to buy it for my sister.",
+      "status": "unread",
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "b1",
+      "title": "How to Care for Your Sterling Silver Jewelry",
+      "summary": "Discover the best tips and tricks to keep your silver jewelry shiny and prevent tarnishing.",
+      "content": "Sterling silver is a beautiful and durable precious metal, but it can tarnish over time due to exposure to air and moisture. To keep your sterling silver jewelry looking its best, follow these simple care steps: 1. Store your silver in airtight bags. 2. Clean with a silver polishing cloth regularly. 3. Avoid wearing silver in hot tubs, pools, or while using cleaning chemicals. By taking proactive care of your items, you will preserve their sparkle for generations to come.",
+      "image": "/media/blog/1.jpg",
+      "category": "Tips",
+      "status": "published",
+      "author": "Admin",
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    },
+    {
+      "id": "b2",
+      "title": "Summer Jewelry Trends for 2026",
+      "summary": "From chunky gold chains to delicate charms, see what jewelry is trending this summer.",
+      "content": "This summer is all about expressing individuality through unique, layered combinations. We are seeing a major rise in: - Dynamic charm bracelets that tell a personal story. - Stackable band rings with different textures. - Statement gold-plated hoops that bridge casual and formal styles. Explore our catalog and pick your favorites to create the perfect sun-kissed look!",
+      "image": "/media/blog/2.jpg",
+      "category": "Collections",
+      "status": "published",
+      "author": "Fashion Editor",
+      "createdAt": "2026-06-24T03:51:08.254Z"
+    }
+  ]
+}
