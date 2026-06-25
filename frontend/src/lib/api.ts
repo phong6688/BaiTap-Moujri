@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://localhost:3000/api';
+export const API_BASE_URL = (import.meta as any).env?.VITE_API_URL || 'https://bai-tap-backend.vercel.app/api';
 
 export const resolveImagePath = (path: string | undefined): string => {
   if (!path) return 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=600';
