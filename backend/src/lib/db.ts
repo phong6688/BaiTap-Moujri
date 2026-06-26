@@ -75,8 +75,26 @@ interface DBData {
   blogs: Blog[];
 }
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+const isVercel = process.env.VERCEL === '1' || process.env.NODE_ENV === 'production';
+const DATA_DIR = isVercel ? '/tmp' : path.join(process.cwd(), 'data');
 const DB_FILE = path.join(DATA_DIR, 'db.json');
+
+// Copy bundled db.json to writeable /tmp on Vercel/production
+if (isVercel && !fs.existsSync(DB_FILE)) {
+  try {
+    const bundledDbPath = path.join(process.cwd(), 'data', 'db.json');
+    if (fs.existsSync(bundledDbPath)) {
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+      const content = fs.readFileSync(bundledDbPath, 'utf-8');
+      fs.writeFileSync(DB_FILE, content, 'utf-8');
+      console.log('Successfully copied bundled db.json to writeable /tmp/db.json');
+    }
+  } catch (err) {
+    console.error('Failed to copy bundled db.json to /tmp/db.json:', err);
+  }
+}
 
 // Mongoose Schemas for MongoDB fallbacks
 const MongooseUserSchema = new mongoose.Schema<User>({
